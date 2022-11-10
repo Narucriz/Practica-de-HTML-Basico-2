@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 //Encontrar elementos de HTML
+//teste001
 
 const titulo = document.getElementById("titulo");
 const parrafo = document.getElementsByTagName("p");
