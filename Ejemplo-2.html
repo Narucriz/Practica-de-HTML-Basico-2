@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de frontend 01</title>
+    <style>
+        body{
+            background-image: url(./Imagenes/hello\ world.PNG);
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/Letracolors.css">
+    <link rel="stylesheet" href="./CSS/Fondos.css">
+    <link rel="stylesheet" href="./CSS/Textos.css">
+    <link rel="stylesheet" href="./CSS/flexbox.css">
+    <link rel="stylesheet" href="./CSS/mobile.css">
+    
+    <!-- y estos son colores-->
+    
+    <!--<style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-image: url(https://areajugones.sport.es/wp-content/uploads/2021/07/webpnet-compress-image-36-1080x609.jpg.webp); 
+        }
+
+        p{
+            font-family: cursive;
+            color: rgba(46, 56, 199, 0.767);
+            text-align: center;
+        }
+
+        #texto{
+            color: rgb(200,150,220);
+            text-align: center;
+        }
+        
+
+        .izquierda{
+            color: rgba(187, 40, 216, 0.534);
+        }
+
+        p.izquierda{
+            text-decoration: underline;
+            text-align: left;
+        }
+
+        .IZ{
+            text-align: left;
+        }
+
+        p#titule{
+            background-color: aqua;
+        }
+
+        .negra{
+            background-color: rgba(40, 216, 55, 0.719);
+        }
+
+        h1, h2, p{
+            font-weight: bold;
+        }
+
+        /* Comentario CSS
+        el hahas jmmm que estas buscando? */
+
+
+    </style>-->
+</head>
+<body>
+
+    <h1 id="titulo">Explicación de elementos compuestos LaunchX Mod</h1>
+    <h6>By Narucriz</h6>
+    
+    <a href="http://www.twitch.tv/narucriz" class="linku">Twitch</a>
+
+    <br><br>
+    <!-- Labels / Etiquetas -->
+    <label for="Input1"> Ingresa Texto warro</label>
+    <br>
+    <!-- Entradas / Inputs -->
+    <input type="text" id="Input1" name="Input1">
+    <br><br>
+
+    <p id="demo">minitestsito chikitito</p>
+    <br>
+    <p>minitestsito chikitito muy muy chiquitito</p>
+    <br>
+    <h2 id="click" onclick="cambiarTexto(this)">Clickme</h2>
+    <br>
+
+    <br>
+    <div onmouseover="mOver(this)" onmouseout="mOut(this)"> <!--esto es para cuando pase el mouse por encima en la pagina-->
+        <P>el hahahssjhgsoind</P>
+    </div>
+    <br>
+
+    
+
+
+    <hr>
+    <!-- Tipos de Inputs -->
+    <h2>Input De Texto</h2>
+    <label for="correo1">Ingresa Correo</label><br>
+    <input type="email" id="correo1" name="correo1"><br><br>
+    
+    <label for="numero1">Ingersa Número de CC</label><br>
+    <input type="number" id="numero1" name="numero1"><br><br>
+    
+    <label for="psw1">Ingresa Contraseña</label><br>
+    <input type="password" id="psw1" name="psw1" minlength="10"><br><br>
+    
+    <label for="psw2">Repetite Contraseña</label><br>
+    <input type="password" id="psw2" name="psw2" minlength="10"><br><br>
+
+    <label for="tel1">Input de Teléfono</label><br>
+    <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+    
+    <label for="url1">Input de URL</label><br>
+    <input type="url" id="url1" name="url1"><br><br>
+
+    <hr>
+    <!--Claro ejemplo que quye el id funciona pero recomendable no usarlo para css-->
+    <p class="ppp" id="titule">prueba de ser buto jeje salu3</p>
+
+    <hr>
+
+    <p class="ppp">Buto el que lo lea</p>
+
+    <hr>
+
+    <p class="izquierda">Buto el que lo siga leyendo jajajasjajbdwikendka salu2</p>
+
+    <hr>
+
+    <p class="IZ negra">Buto el que lo vuelva a leer bdsikfbqwihyendkjhqs jiji jaja salu2</p>
+
+    <h2>Input de selección multiple</h2><br>
+    <input type="checkbox" id="topping1" name="topping1" value="Cebolla">
+    <label for="topping1">Tacos con Cebolla</label><br>
+    <input type="checkbox" id="topping2" name="topping2" value="Cilantro">
+    <label for="topping2">Tacos con Cilantro</label><br>
+    <input type="checkbox" id="topping3" name="topping3" value="Salsa">
+    <label for="topping3">Tacos con Salsa</label><br><br>
+    
+    <h2>Input de selección única</h2><br>
+    <input type="radio" id="roja" name="salsas" value="Roja">
+    <label for="roja">Roja</label><br>
+    <input type="radio" id="verde" name="salsas" value="Verde">
+    <label for="verde">Verde</label><br>
+    <input type="radio" id="guacamole" name="salsas" value="Guacamole">
+    <label for="guacamole">Guacamole</label><br><br>
+
+    <h2>Select</h2>
+    <label for="tacos">De que la orden</label>
+    <select id="tacos" name="tacos">
+        <option value="suadero">Suadero</option>
+        <option value="pastor">Pastor</option>
+        <option value="campechanos">Campechanos</option>
+        <option value="tripa">Tripa</option>
+    </select>
+    
+    <h2>Select con Input</h2>
+    <label for="refresco">Elige tu refresco favorito</label><br>
+    <input list="refresco">
+    <datalist id="refresco">
+        <option value="Coca-Cola">
+        <option value="Manzana">
+        <option value="Naranja">
+        <option value="Mango">
+        <option value="Guayaba">
+    </datalist>
+    <br><br>
+
+    <hr>
+    <!--prueba de que las id funcionan con el css, pero recomendable usar las clases que son los (.)-->
+        <h2 id="texto">Input de Fecha</h2><br>
+    
+        <input class="fecha" type="date" id="fecha1" name="fecha1"><br>
+        <input class="fecha" type="datetime-local" id="fecha2" name="fecha2"><br>
+        <input class="fecha" type="week" id="fecha3" name="fecha3"><br>
+        <input class="fecha" type="time" id="fecha4" name="fecha4"><br>
+        <input class="fecha" type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+
+    <h2>Input de Fecha</h2><br>
+    <input type="date" id="fecha1" name="fecha1"><br>
+    <input type="datetime-local" id="fecha2" name="fecha2"><br>
+    <input type="week" id="fecha3" name="fecha3"><br>
+    <input type="time" id="fecha4" name="fecha4"><br>
+    <input type="month" id="fecha5" name="fecha5"><br><br>
+    
+    <hr>
+    
+    <h2>Input de archivo</h2><br>
+    <input type="file" id="archivo1" name="archivo1" multiple><br><br>
+    
+    <h2>Input de Color</h2><br>
+    <input type="color" id="color1" name="color1"><br><br>
+    
+    <h2>Input de Rango</h2>
+    <label for="vol">Volumen (entre 0 y 50):</label><br>
+    <input type="range" id="vol" name="vol" min="0" max="50"><br>
+    
+    <hr>
+    
+    <h2>Input de botón</h2>
+    <input type="reset"><br>
+    <input type="submit"><br>
+    <input type="button" id="boton1" name="boton1" value="Botón 1" onclick="alert('Bienvenidos explorers');"><br><br>
+    
+    <hr>
+    <!-- Formularios -->
+    <h2>Ejemplo de Formulario</h2>
+    <form action="/accion.js" id="form1" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" form="form1"><br>
+        <input type="submit" value="Submit">
+        <input type="reset">
+    </form>
+
+    
+    <section class="contenedor">
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+        <div class="elemento"></div>
+    </section>
+    <br>
+
+    <section class="container">
+        <div class="container-div">
+            <p class="parrafo">buto el que lo lea akjhdbfciabeiufasj XD</p>
+        </div>
+    </section>
+
+    <br>
+    <section class="piepagf">
+        <p class="piepag">Todos los derechos reservados.</p>
+    </section>
+    <script src="./js/JS01.js"></script>
+    <script src="./js/JSFUN01.js"></script>
+    <script src="./js/JSFUN02.js"></script>
+</body>
+</html>
