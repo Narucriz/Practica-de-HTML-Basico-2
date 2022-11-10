@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -50,3 +51,57 @@ div{
     background-position: center;
     background-size: cover;
 }
+=======
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section{
+    height: 150px;
+}
+
+div{
+    height: 400px;
+}
+
+.fondoColor{
+    background-color: #0f6666;
+}
+
+.fondoOpacidad{
+    background-color: #5d0c0c;
+    opacity: 0.6;
+}
+
+.fondoImagen{
+    background-image: url("../Imagenes/hello\ world.PNG");
+}
+
+.fondoRepetidoX{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: repeat-x;
+}
+
+.fondoRepetidoY{
+    background-image: url("../images/fondo1.jpg");
+    background-repeat: repeat-y;
+}
+
+.fondoNoRepetido{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: no-repeat;
+}
+/*imagen de fondo en Posicion exacta*/
+.piepagf{
+    background-image: url("../Imagenes/final.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.fondoCompleto{
+    background-image: url("../images/fondo2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+>>>>>>> 879a039f90371f9a0891de2e88253cbc384fe6d3

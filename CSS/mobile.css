@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -30,4 +31,38 @@
     .container{
         background-color: black;
     }
+=======
+*{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.container{
+    background-color: blue;
+    height: 400px;
+
+}
+
+.container-div{
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+}
+
+.parrafo{
+    font-size: 15;
+    font-weight: bold;
+}
+
+
+@media (max-width: 600px) {
+    .container{
+        background-color: red;
+    }
+}
+
+@media (max-width: 900px) and (min-width: 600px) {
+    .container{
+        background-color: black;
+    }
+>>>>>>> 879a039f90371f9a0891de2e88253cbc384fe6d3
 }
